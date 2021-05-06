@@ -1,0 +1,44 @@
+// {i_DATA_IN, i_OP, i_CLR, i_LOAD, i_COMP}
+// 7x7 = 49
+0111_xxx_0_1_0 // LOAD. R0<-1100
+0111_xxx_0_1_0 // LOAD. R1<-1100; R0<-0011
+xxxx_000_0_0_0 // do nothing
+xxxx_010_0_0_1 // MUL
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_1_0_0 // clear
+xxxx_xxx_0_0_0 // do nothing
+// -1 x 7 = -7
+1111_xxx_0_1_0 // LOAD. R0<-1111
+0111_xxx_0_1_0 // LOAD. R1<-1100; R0<-0111
+xxxx_000_0_0_0 // do nothing
+xxxx_010_0_0_1 // MUL
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_1_0_0 // clear
+xxxx_xxx_0_0_0 // do nothing
+// -6 x -6 = 36
+1010_xxx_0_1_0 // LOAD. R0<-1111
+1010_xxx_0_1_0 // LOAD. R1<-1100; R0<-0111
+xxxx_000_0_0_0 // do nothing
+xxxx_010_0_0_1 // MUL
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_1_0_0 // clear
+xxxx_xxx_0_0_0 // do nothing
+xxxx_xxx_x_x_x
